@@ -48,6 +48,11 @@ namespace TodoItem
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TodoItem v1")); */
             }
 
+            // added for js
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+            // added for js
+            
             app.UseHttpsRedirection();
 
             app.UseRouting();
